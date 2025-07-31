@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/88aa531bcd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="header">
+    <!-- Video Background -->
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="images/vecteezy_red-flashing-lines-and-dots-with-multiple-polygon-shape-on_34769223.mp4"
+        type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Front-End Developer</p>
+        <h1>Hi, I'm <span>Priya Jaraut</span>.</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- ---------about--------- -->
+  <div id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Hi, I'm Priya Jaraut, a passionate and detail-oriented BCA student from Government College for Girls ,
+            Sector 14 (Gurugram University),
+            currently exploring the world of front-end development.
+            I enjoy bringing creative ideas to life through clean, responsive, and user-friendly web interfaces.
+            I also have a basic understanding of React, Figma, and Canva, which helps me bridge design with
+            development.<br>
+            I'm always eager to learn and grow by building real-world projects, collaborating with others, and keeping
+            up with modern UI/UX trends.
+            I'm seeking an opportunity where I can contribute meaningfully while improving my skills every day.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-links" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('experiences')">
+              Experiences
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('certification')">Certification</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Languages & Tools</span><br />HTML, CSS, JavaScript, Git, GitHub, VS Code</li>
+              <li><span>UI/UX</span><br />Basic design using Figma & Canva</li>
+              <li><span>Frameworks</span><br />Basic React.js knowledge</li>
+
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experiences">
+            <ul>
+              <li>
+                <h3><span>💻 Front-End Developer (Project-Based)</span></h3>
+              </li>
+              <li><span>Self-Learning & Practice</span></li>
+            </ul>
+            <ul>
+              <li>Created <strong>FoodiFy</strong>, an interactive <span>food ordering web app</span>.</li>
+              <li>Built <span>mini web apps</span>: To-Do List, Pomofocus, and MyFeelings.</li>
+              <li>Designed <span>UI/UX layouts</span> using <strong>Figma</strong> and <strong>Canva</strong> (basic).
+              </li>
+          </div>
+
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2022 - 2025</span><br />
+                Bachelor of Computer Applications (BCA), Gurugram University, Haryana
+              </li>
+              <li>
+                <span>2021 - 2022</span><br />
+                Higher Secondary (12th), Computer Science - Presidency The International School, Bhiwadi
+              </li>
+              <li>
+                <span>2019 - 2020</span><br />
+                Secondary (10th), Shaheed Amar Singh Public School, Bilaspur, Haryana
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="certification">
+            <ul>
+              <li>
+                <span>Meta Front-End Developer</span><br><br>
+                <a class="btn view"
+                  href="https://www.coursera.org/account/accomplishments/specialization/4CCYO4CLIYNO?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof"
+                  target="_blank">
+                  View Certificate
+                </a>
+              </li>
+
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------services----------- -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>
+            I build responsive websites using HTML, CSS, and JavaScript with a focus on clean layouts and smooth user
+            interaction.
+            My goal is to make websites both visually appealing and easy to use.
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p>
+            I convert UI/UX designs into pixel-perfect front-end code.
+            I make sure the designs are interactive, responsive, and user-friendly using modern tools like Flexbox,
+            Grid, and animations.
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>App Design</h2>
+          <p>
+            I develop front-end interfaces for web apps with a mobile-first approach.
+            My focus is on building smooth user experiences using React or vanilla JavaScript.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------portfolio---------- -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/foodify.png" />
+          <div class="layer">
+            <h3> FoodiFy </h3>
+            <p>
+              It is a responsive food ordering web app that lets users browse items, view prices, add to cart,
+              and checkout with a smooth, interactive UI.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Priya-1526/FoodiFy" target="_blank" title="GitHub Code">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://priya-1526.github.io/FoodiFy/" target="_blank" title="Live Demo">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/todo.png" />
+          <div class="layer">
+            <h3>To-Do List App</h3>
+            <p>
+              Task manager with progress tracking, localStorage support, and responsive UI.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Priya-1526/To-Do-List-without-electron" target="_blank" title="GitHub Code">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://priya-1526.github.io/To-Do-List-without-electron/" target="_blank" title="Live Demo">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/pomofocus.png" />
+          <div class="layer">
+            <h3>Pomofocus</h3>
+            <p>
+              Pomodoro timer app for focused work sessions with automatic breaks.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Priya-1526/PomoFocus-Timer" target="_blank" title="GitHub Code">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://priya-1526.github.io/PomoFocus-Timer/" target="_blank" title="Live Demo">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="work hidden">
+          <img src="images/my-feeling.png" />
+          <div class="layer">
+            <h3>My Feelings</h3>
+            <p>
+              Mood tracker with emoji-based UI, daily journaling, and screenshot saving.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Priya-1526/My-Daily-Feelings-without-electron" target="_blank" title="GitHub Code">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://priya-1526.github.io/My-Daily-Feelings-without-electron/" target="_blank" title="Live Demo">
+                <i class="fa-solid fa-eye"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn" id="see-more-btn">See More</button>
+    </div>
+  </div>
+
+  <!-- ------------contact-------------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>pjaraut224@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>9521341***</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href=" https://github.com/Priya-1526 "><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/priya-jaraut-1419b72b1 "><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+
+          <button href="images/my-cv.pdf" download class="btn btn2">
+            Download CV
+          </button>
+        </div>
+
+        <!------ form -------->
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Enter name" required />
+            <input type="email" name="Email" placeholder="Enter email" required />
+            <textarea name="Message" rows="10" cols="50" placeholder="Your message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        All copyright reserved. Made with ♥️ by Priya Jaraut
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
