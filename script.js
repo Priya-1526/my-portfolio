@@ -44,6 +44,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//Download CV button
+document.getElementById("downloadBtn").addEventListener("click", function () {
+  const msg = document.getElementById("downloadMsg");
+  msg.style.display = "block";
+
+  setTimeout(() => {
+    msg.style.display = "none";
+  }, 3000); // Hide after 3 seconds
+});
+
 
 // Google Sheets form submission
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyTr9ABt0fMjK995Kwe0ey-qRxxz9oAd0FepkbIElPTFlCmcJH4gi1smO_LXqALRLlVRw/exec';
